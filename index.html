@@ -7,14 +7,15 @@
     </head>
     <body>
         <script type="text/javascript">
-            var animal = ["rat", "ox", "tiger", "rabbit", "dragon", "snake", "horse", "sheep", "monkey", "rooster", "dog", "pig"]
+            var animal = ["rat", "ox", "tiger", "rabbit", "dragon", "snake", "horse", "sheep", "monkey", "rooster", "dog", "pig"];
 	    d3.select("body").append("ul").selectAll("li")
 		.data(animal)
 		.enter()
 		.append("li")
 		.text(function(d){
 		    return d;
-		});
+		})
+		.style("color", "blue");
         </script>
     </body>
 </html>
