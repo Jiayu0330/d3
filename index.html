@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3 page</title>
+        <script type="text/javascript" src="d3.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var animal = ["rat", "ox", "tiger", "rabbit", "dragon", "snake", "horse", "sheep", "monkey", "rooster", "dog", "pig"]
+	    d3.select("body").append("ul").selectAll("li")
+		.data(animal)
+		.enter()
+		.append("li")
+		.text(function(d){
+		    return d;
+		});
+		.style("fill", "orange");
+        </script>
+    </body>
+</html>
